@@ -24,16 +24,6 @@ Route::get('/', function () {
     return view('auth.login', ['pageTitle' => 'Login']);
 })->middleware('guest');
 
-Route::get('/test', function () {
-
-
-    $roles = Permission::all()->pluck('name');
-    echo '<pre>';
-    print_r($roles);
-    echo '</pre>';
-})->middleware('guest');
-
-
 Route::middleware('auth')->group(function () {
 
     Route::get('/dashboard', DashboardController::class)->name('dashboard');
