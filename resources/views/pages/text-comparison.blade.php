@@ -18,9 +18,9 @@
                             <form action="{{ route('compare-texts') }}" onsubmit="return false" method="post" id="form-action">
                                 @csrf
                                 <x-forms.form-textarea label="Plaint Text" name="input2" placeholder="Tulis text" rows="5" />
-                                <x-forms.form-input label="Karakter Comperasion" type="text" name="input1" placeholder="..." />
+                                <x-forms.form-input label="Karakter Comparison" type="text" name="input1" placeholder="..." />
                                 <div class="d-grib">
-                                    <button type="submit" class="btn btn-primary">Comperasion Text</button>
+                                    <button type="submit" class="btn btn-primary">Comparison Text</button>
                                 </div>
                             </form>
 
