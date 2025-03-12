@@ -29,7 +29,6 @@ class RoleController extends Controller
                 $request->input('permission')
             );
 
-            dd($permissionsID);
             if ($request->ID == 0) {
 
 
