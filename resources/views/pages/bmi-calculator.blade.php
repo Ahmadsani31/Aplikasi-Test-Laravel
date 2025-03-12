@@ -18,10 +18,10 @@
                         <div class="card-body">
                             <form action="{{ route('bmi') }}" onsubmit="return false" method="post" id="form-action">
                                 @csrf
-                                <x-forms.form-input label="Nama" type="text" name="name" placeholder="..." />
+                                <x-forms.form-input label="Nama" type="text" name="name" placeholder="Nama" />
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <x-forms.form-input label="Berat Badan" type="number" name="weight" placeholder="cm" />
+                                        <x-forms.form-input label="Berat Badan" type="number" name="weight" placeholder="kg" />
                                     </div>
                                     <div class="col-md-6">
                                         <x-forms.form-input label="Tinggi Badan" type="number" name="height" placeholder="cm" />
