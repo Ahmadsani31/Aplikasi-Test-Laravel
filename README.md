@@ -7,9 +7,9 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## Laravel 11 with Mantis Template FREE
+## Laravel 11 Test Coding Aplikasi
 
-Laravel 11 integrated with template mantis bootstrap 5 free:
+This app use Laravel 11 for test coding for hashmicro and integrated with template mantis bootstrap 5 free:
 
 ## Overview
 
@@ -25,7 +25,7 @@ This repository contains a laravel 11 template that comes pre-configured with au
 - Pre-configured Dashboard
 - Email Verification (Mailtrap)
 - Laravel Components (Blade Template)
-- Example Pages (Register, Login, Forgot password, Dashboard, Blank Page, - - Edit User Profile)
+- Example Pages (Register, Login, Forgot password, Dashboard, ...., ....)
 
 ## Installation Guide
 ### Prerequisites
@@ -38,12 +38,12 @@ This repository contains a laravel 11 template that comes pre-configured with au
 
 1. Clone the repository:
 ```
-git clone https://github.com/Ahmadsani31/Laravel-Mantis.git
+git clone https://github.com/Ahmadsani31/Aplikasi-Test-Laravel.git
 ```
 
 2. Navigate into the project directory:
 ```
-cd Laravel-Mantis
+cd Aplikasi-Test-Laravel
 ```
 
 3. Install PHP dependencies:
