@@ -1,0 +1,6 @@
+@import '@public/assets/css/style.css';
+@import '@public/assets/css/style-preset.css';
+
+.swal2-container {
+    z-index: 9999;
+}
