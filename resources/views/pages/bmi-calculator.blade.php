@@ -30,7 +30,7 @@
                                 <div class="mb-3">
                                     <label class="form-label">Gender</label>
                                     <select class="form-control select-2" name="gender" id="gender">
-                                        {!! OptionCreate(['male', 'female'], ['Laki-Laki', 'Perempua'], '') !!}
+                                        {!! OptionCreate(['male', 'female'], ['Laki-Laki', 'Perempuan'], '') !!}
                                     </select>
                                 </div>
                                 <div class="d-grib">
