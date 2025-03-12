@@ -17,12 +17,11 @@ use App\Http\Middleware\XSSProtection;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-
+use Spatie\Permission\Models\Role;
 
 Route::get('/', function () {
     return view('auth.login', ['pageTitle' => 'Login']);
 })->middleware('guest');
-
 
 Route::middleware('auth')->group(function () {
 

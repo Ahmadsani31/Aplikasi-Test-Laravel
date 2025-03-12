@@ -42,45 +42,6 @@ $(document).on("click", ".modal-cre", function (e) {
     });
 });
 
-$(document).on("click", ".modal-image-cre", function (e) {
-    $("#myModalImages").modal("toggle");
-
-    $("#content").html(
-        '<div style="text-align:center; color:red; font-weight:bold;padding:10px">Loading ...</div> '
-    );
-    // $("#loading-ajax-modal").show();
-    var serial = "";
-    $.each(this.attributes, function () {
-        if (this.specified) {
-            serial += "&" + this.name + "=" + this.value;
-        }
-    });
-
-    var id = $(this).attr("id");
-    var judul = $(this).attr("judul");
-    // console.log(id);
-    if (id == "person" || id == "aktivitas") {
-        $("#size_modal").addClass("modal-xl");
-    } else {
-        $("#size_modal").removeClass("modal-lg");
-        $("#size_modal").removeClass("modal-xl");
-    }
-
-    if (judul != null) {
-        $(".modal-title").html(judul);
-    } else {
-        $(".modal-title").html("Kelola Data");
-    }
-
-    var base_url = $('meta[name="base-url"]').attr("content");
-
-    var page = base_url + "/modal/modal-" + id;
-    $.post(page, serial, function (data) {
-        // $("#loading-ajax-modal").hide();
-        $("#content-images").html(data);
-    });
-});
-
 $(document).on("click", ".modal-del", function (e) {
     var serial = "";
     var tbData = "";
@@ -101,7 +62,7 @@ $(document).on("click", ".modal-del", function (e) {
 
     Swal.fire({
         title: "Perhatian!",
-        text: "Kamu yakin ingin menghapus data ini?",
+        text: "Kamu yakin ingin menghapus data inia?",
         icon: "warning",
         showCancelButton: true,
         confirmButtonColor: "#3085d6",

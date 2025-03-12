@@ -29,11 +29,11 @@ class PermissionSeeder extends Seeder
             'delete'
         ];
 
+
         foreach ($pages as $page) {
             foreach ($permissions as $permission) {
-                $name = $page . '-' . $permission;
                 Permission::create([
-                    'name' => $name
+                    'name' => $page . '-' . $permission
                 ]);
             }
         }

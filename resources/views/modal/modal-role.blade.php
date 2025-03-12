@@ -14,16 +14,18 @@
     <input type="hidden" name="ID" value="{{ request()->parent }}">
     <div class="modal-body">
         <x-forms.form-input label="Nama" type="text" name="name" placeholder="Role" :value="$name" />
-        <ul class="list-group">
+        <div class="mb-3">
             @foreach ($permission as $item)
-                <li class="list-group-item p-1">
-                    <input class="form-check-input me-1" name="permission[]" type="checkbox" value="{{ $item->id }}"
-                        id="{{ $item->id }}"
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="permission[]" value="{{ $item->id }}"
+                        id="{{ $item->name }}"
                         {{ request()->parent != 0 ? ($role->hasPermissionTo($item->name) ? 'checked' : '') : '' }}>
-                    <label class="form-check-label stretched-link" for="{{ $item->id }}">{{ $item->name }}</label>
-                </li>
+                    <label class="form-check-label" for="{{ $item->name }}">
+                        {{ $item->name }}
+                    </label>
+                </div>
             @endforeach
-        </ul>
+        </div>
     </div>
     <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
